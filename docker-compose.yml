@@ -6,4 +6,4 @@ services:
     build: .
     container_name: nginx_services
     ports:
-      - 80:80
+      - 8080:80
