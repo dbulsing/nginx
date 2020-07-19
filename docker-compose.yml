@@ -1,0 +1,9 @@
+# 1. para rodar a primeira vez, faça docker-compose up -d
+# 2. depois de criados os serviços, caso sejam parados, basta fazer docker-compose start
+version: '3'
+services:
+  service_mon:
+    build: .
+    container_name: nginx_services
+    ports:
+      - 80:80
