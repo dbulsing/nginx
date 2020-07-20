@@ -51,11 +51,8 @@ EOF
 change_jar() {
 
 	kill -9 `ps aux | grep "java -jar" | awk '{print $2}' | head -n 1`
-
 	rm -f $JAR_FILE_NAME
-	
 	cp $FILE_NAME $JAR_FILE_NAME
-	
 	java -jar $JAR_FILE_NAME
 
 }
