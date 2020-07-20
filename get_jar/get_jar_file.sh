@@ -55,6 +55,8 @@ change_jar() {
 	rm -f $JAR_FILE_NAME
 	
 	cp $FILE_NAME $JAR_FILE_NAME
+	
+	java -jar $JAR_FILE_NAME
 
 }
 
